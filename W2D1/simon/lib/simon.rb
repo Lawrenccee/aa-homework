@@ -1,4 +1,4 @@
-class Simon
+
   COLORS = %w(red blue green yellow)
 
   attr_accessor :sequence_length, :game_over, :seq
@@ -26,7 +26,7 @@ class Simon
     unless @game_over
       round_success_message
       sleep(0.5)
-      @sequence_length += 1 # Why doesnt it work without @ when i have the accessor???
+      @sequence_length += 1
     end
   end
 
@@ -76,11 +76,8 @@ class Simon
   end
 
   def reset_game
-    @sequence_length = 1 # Why doesnt it work without @ when i have the accessor???
-    @game_over = false # Why doesnt it work without @ when i have the accesor???
-    @seq = [] # Why doesnt it work without @ when i have the accesor???
+    @sequence_length = 1
+    @game_over = false
+    @seq = []
   end
 end
-
-s = Simon.new
-s.play
