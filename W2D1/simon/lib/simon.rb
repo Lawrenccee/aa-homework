@@ -1,4 +1,4 @@
-
+class Simon
   COLORS = %w(red blue green yellow)
 
   attr_accessor :sequence_length, :game_over, :seq
@@ -58,7 +58,6 @@
           @game_over = true
           break
         end
-
       end
     end
   end
@@ -81,3 +80,6 @@
     @seq = []
   end
 end
+
+s = Simon.new
+s.play
