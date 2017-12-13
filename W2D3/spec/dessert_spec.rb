@@ -7,7 +7,7 @@ Instructions: implement all of the pending specs (the `it` statements without bl
 
 describe Dessert do
   let(:chef) { double("chef") }
-  let(:macaron) { Dessert.new("macaron", 25, chef) }
+  subject(:macaron) { Dessert.new("macaron", 25, chef) }
 
   describe "#initialize" do
     it "sets a type" do
@@ -15,11 +15,11 @@ describe Dessert do
     end
 
     it "sets a quantity" do
-      expect(macaron.quantity).to be(25)
+      expect(macaron.quantity).to eq(25)
     end
 
     it "starts ingredients as an empty array" do
-      expect(macaron.ingredients.empty?).to be(true)
+      expect(macaron.ingredients.empty?).to eq(true)
     end
 
     it "raises an argument error when given a non-integer quantity" do
@@ -50,7 +50,7 @@ describe Dessert do
 
   describe "#eat" do
     it "subtracts an amount from the quantity" do
-      expect(macaron.eat(5)).to be(20)
+      expect(macaron.eat(5)).to eq(20)
     end
 
     it "raises an error if the amount is greater than the quantity" do
