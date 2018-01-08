@@ -1,0 +1,9 @@
+<% @pokemons.each do |pokemon| %>
+  <%= render "shared/pokemon", pokemon: pokemon %>
+<% end %>
+
+<% content_for :title do %>
+  <header class="page-title">
+    Showing Pokemon!
+  </header>
+<% end %>

@@ -1,0 +1,30 @@
+<% if action == :signin %>
+  <% message = 'Sign In' %>
+  <% actions_url = session_url %>
+<% else %>
+  <% message = 'Sign Up' %>
+  <% actions_url = users_url %>
+<% end %>
+
+<div class="form-container">
+  <form class="sign-form" action="<%= actions_url %>" method="post">
+    <%= auth_token %>
+
+    <div class="username-container">
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      <label class="form-label" for="email">Email: </label>
+      <input id="email" type="text" name="user[email]" value="">
+    </div>
+
+    <br>
+
+    <div class="password-container">
+      <label class="form-label" for="password">Password: </label>
+      <input id="password" type="password" name="user[password]" value="">
+    </div>
+
+    <br>
+
+    <input class="buttons button-right" type="submit" value="<%= message %> Now">
+  </form>
+</div>

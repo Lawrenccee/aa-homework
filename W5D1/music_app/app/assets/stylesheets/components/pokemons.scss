@@ -1,0 +1,31 @@
+// Place all the styles related to the Pokemons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.pokemon-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.pokemon-form > div {
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.button-center {
+  align-self: center;
+}
+
+.display-pokemon {
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+}

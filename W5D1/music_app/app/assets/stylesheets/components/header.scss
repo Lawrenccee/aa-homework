@@ -1,0 +1,74 @@
+// @import "colors.scss";
+
+.music-app {
+  font-family: $comic;
+  text-align: center;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.music-app img {
+  height: 50px;
+  margin: 0 15px;
+}
+
+.flexor {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.username {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 24px;
+  display: flex;
+  align-self: center;
+}
+
+.buttons, input[type=submit] {
+  margin: 3px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid yellow;
+  border-top: 1px solid red;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  display: flex;
+  align-self: center;
+}
+
+.button_to {
+  align-self: center;
+}
+
+.buttons > a, input[type=submit] {
+  color: black;
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+}
+
+.buttons:hover, input[type=submit]:hover{
+  text-decoration: underline;
+  border-left: 2px solid yellow;
+  border-right: 2px solid yellow;
+}
+
+i {
+  color: red;
+}
+
+.pikachu {
+  height: 75px;
+  margin: 5px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}

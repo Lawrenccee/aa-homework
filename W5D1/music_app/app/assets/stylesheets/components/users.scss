@@ -1,0 +1,41 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form-label {
+  font-family: $comic;
+  font-size: 16px;
+}
+
+.sign-form {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-right {
+  float: right;
+  cursor: pointer;
+}
+
+.sign-form > input {
+  float: right;
+  align-self: flex-end;
+}
+
+.username-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.password-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

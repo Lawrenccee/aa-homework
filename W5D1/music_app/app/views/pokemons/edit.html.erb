@@ -1,0 +1,7 @@
+<%= render "shared/pokemon_form", pokemon: @pokemon, action: :edit %>
+
+<% content_for :title do %>
+  <header class="page-title">
+    Edit the name for <%= @pokemon.name %>!
+  </header>
+<% end %>

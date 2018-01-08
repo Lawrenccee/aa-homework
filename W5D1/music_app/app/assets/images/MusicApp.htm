@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:3000/pokemons/2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MusicApp</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="IdROc9HmHgllI5Mpgs9JGJ9sOXSxRmNzobwq9XxfacaMPRyvAq21sddu7TabE7d5+WxGvnfgYNRX4Bc4fycC5w==">
+    <link rel="stylesheet" media="all" href="./MusicApp_files/application.self-dd0513b972a7f3204ef4c8dece6502b4424cddd3406ee875c7cac5749b60843e.css">
+    <script src="./MusicApp_files/rails-ujs.self-817d9a8cb641f7125060cb18fefada3f35339170767c4e003105f92d4c204e39.js"></script><style id="dark-reader-style" type="text/css"></style><style></style>
+<script src="./MusicApp_files/action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js"></script>
+<script src="./MusicApp_files/cable.self-8484513823f404ed0c0f039f75243bfdede7af7919dda65f2e66391252443ce9.js"></script>
+<script src="./MusicApp_files/pokemons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js"></script>
+<script src="./MusicApp_files/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js"></script>
+<script src="./MusicApp_files/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js"></script>
+<script src="./MusicApp_files/application.self-58b1eb225e13e3709a67ff1fd3579ba47e1509e0221833d7f486543e09ddef38.js"></script>
+  <style type="text/css">.backpack.dropzone {
+  font-family: 'SF UI Display', 'Segoe UI';
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  font-weight: lighter;
+  color: white;
+  will-change: right;
+  z-index: 2147483647;
+  bottom: 20%;
+  background: #333;
+  position: fixed;
+  user-select: none;
+  transition: left .5s, right .5s;
+  right: 0px; }
+  .backpack.dropzone .animation {
+    height: 80px;
+    width: 250px;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+  .backpack.dropzone .title::before {
+    content: 'Save to'; }
+  .backpack.dropzone.closed {
+    right: -250px; }
+  .backpack.dropzone.hover .animation {
+    animation: sxt-play-anim-hover 0.91s steps(21);
+    animation-fill-mode: forwards;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+
+@keyframes sxt-play-anim-hover {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -5250px; } }
+  .backpack.dropzone.saving .title::before {
+    content: 'Saving to'; }
+  .backpack.dropzone.saving .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
+    animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+
+@keyframes sxt-play-anim-saving {
+  100% {
+    background-position: -14750px; } }
+  .backpack.dropzone.saved .title::before {
+    content: 'Saved to'; }
+  .backpack.dropzone.saved .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
+    animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+
+@keyframes sxt-play-anim-saved {
+  100% {
+    background-position: -5000px; } }
+</style></head>
+
+  <body class="vsc-initialized">
+
+    <div class="header-container">
+
+      <img class="pikachu" src="./MusicApp_files/5Pikachu.png" alt="pikachu">
+
+        <div class="username">
+          Welcome lawrence2!
+        </div>
+        <div class="flexor">
+            <form class="button_to" method="post" action="http://localhost:3000/session"><input type="hidden" name="_method" value="delete"><input type="submit" value="Sign Out"><input type="hidden" name="authenticity_token" value="IdROc9HmHgllI5Mpgs9JGJ9sOXSxRmNzobwq9XxfacaMPRyvAq21sddu7TabE7d5+WxGvnfgYNRX4Bc4fycC5w=="></form>
+        </div>
+    </div>
+
+    <header class="music-app">
+      <img src="./MusicApp_files/Pokeball.png" alt="pokeball">
+      Pokemon App
+      <img src="./MusicApp_files/Pokeball.png" alt="pokeball">
+    </header>
+
+    
+
+
+    <div class="display-pokemon">
+  hello
+</div>
+
+
+  
+
+</body></html>

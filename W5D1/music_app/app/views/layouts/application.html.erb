@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicApp</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+
+    <div class="header-container">
+
+      <img class="pikachu" src="/assets/5Pikachu.png" alt="pikachu">
+
+      <% if logged_in? %>
+        <div class="username">
+          Welcome <%= current_user.email  %>!
+        </div>
+      <% end %>
+      <% if logged_in? %>
+        <div class="flexor">
+            <%= button_to 'Sign Out', session_url, method: :delete %>
+        </div>
+      <% else %>
+        <div class="flexor">
+          <div class="buttons">
+            <%= link_to 'Sign In', new_session_url %>
+          </div>
+          <div class="buttons">
+            <%= link_to 'Sign Up', new_user_url %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <header class="music-app">
+      <img src="/assets/Pokeball.png" alt="pokeball">
+      Pokemon App
+      <img src="/assets/Pokeball.png" alt="pokeball">
+    </header>
+
+    <%= yield :title %>
+
+    <% if flash[:errors] %>
+      <ul class="errors">
+        <% flash[:errors].each do |error| %>
+          <li><%= error %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

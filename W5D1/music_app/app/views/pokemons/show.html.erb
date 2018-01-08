@@ -1,0 +1,7 @@
+<%= render "shared/pokemon", pokemon: @pokemon %>
+
+<% content_for :title do %>
+  <header class="page-title">
+    Page for <%= @pokemon.name %>!
+  </header>
+<% end %>
