@@ -1,3 +1,4 @@
+// TODO var can be reset anywhere and keep it value from inner scope
 // function mysteryScoping1() {
 //   var x = 'out of block';
 //   if (true) {
@@ -7,6 +8,8 @@
 //   console.log(x);
 // }
 //
+// TODO Const can be reset anywhere and keeps its value from the scope
+// it was defined in
 // function mysteryScoping2() {
 //   const x = 'out of block';
 //   if (true) {
@@ -16,6 +19,7 @@
 //   console.log(x);
 // }
 //
+// TODO ERROR, cant reset const with var
 // function mysteryScoping3() {
 //   const x = 'out of block';
 //   if (true) {
@@ -25,6 +29,8 @@
 //   console.log(x);
 // }
 //
+// TODO let can be reset anywhere and keeps its value from the scope
+// but cannot be set again using let in the same scope
 // function mysteryScoping4() {
 //   let x = 'out of block';
 //   if (true) {
@@ -34,6 +40,7 @@
 //   console.log(x);
 // }
 //
+// TODO ERROR, let is per scope
 // function mysteryScoping5() {
 //   let x = 'out of block';
 //   if (true) {
