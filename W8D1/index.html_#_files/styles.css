@@ -1,0 +1,108 @@
+div, h1, h2, h3, img, a, body, p {
+  padding: 0;
+  margin: 0;
+}
+
+.splash-container {
+  position: absolute;
+  z-index: -1;
+}
+
+.splash-container img {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 25%;
+}
+
+.sign-nav {
+  display: flex;
+}
+
+.user-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-nav {
+  display: flex;
+}
+
+a, p {
+  font-size: 20px;
+  margin: 0 10px;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* index.html stuff */
+.nav-bar {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+}
+
+.list-container {
+  display: flex;
+}
+
+.list-container li {
+  list-style: none;
+}
+
+.search-form {
+  display: flex;
+}
+
+.new-list-form {
+  display: flex;
+}
+
+.new-item-form {
+  display: flex;
+}
+
+.complete-form {
+  display: flex;
+}
+
+div img {
+  width: 110px;
+}
+
+.text-container > h1 {
+  color: black;
+  font-size: 50px;
+  margin: 0;
+  text-align: left;
+}
+
+.text-container > p {
+  color: black;
+  font-size: 20px;
+  margin: 0;
+}
+
+.text-container {
+  width: 225px;
+}
+
+.logo-container {
+  display: flex;
+  height: 110px;
+  justify-content: flex-start;
+}
